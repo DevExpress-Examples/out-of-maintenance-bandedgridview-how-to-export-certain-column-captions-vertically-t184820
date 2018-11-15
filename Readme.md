@@ -1,3 +1,12 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [CustomBandedGridView.cs](./CS/CustomBandedGridView/CustomBandedGridView.cs) (VB: [CustomBandedGridView.vb](./VB/CustomBandedGridView/CustomBandedGridView.vb))
+* [CustomGrid.cs](./CS/CustomBandedGridView/CustomGrid.cs) (VB: [CustomGrid.vb](./VB/CustomBandedGridView/CustomGrid.vb))
+* [CustomView.cs](./CS/CustomBandedGridView/CustomView.cs) (VB: [CustomView.vb](./VB/CustomBandedGridView/CustomView.vb))
+* [Form1.cs](./CS/Form1.cs) (VB: [Form1.vb](./VB/Form1.vb))
+* [Program.cs](./CS/Program.cs) (VB: [Program.vb](./VB/Program.vb))
+<!-- default file list end -->
 # BandedGridView - How to export certain column captions vertically
 
 
