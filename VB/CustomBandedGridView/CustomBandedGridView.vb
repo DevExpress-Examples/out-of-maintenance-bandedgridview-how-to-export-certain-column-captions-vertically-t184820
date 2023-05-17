@@ -53,11 +53,11 @@ Namespace dxExample
             MyBase.New(args)
 
         End Sub
-        Protected Overrides Sub SetDefaultBrickStyle(ByVal graph As IBrickGraphics, ByVal style As BrickStyle)
+        Protected Overrides Sub SetDefaultBrickStyle(ByVal graph As BrickGraphics, ByVal style As BrickStyle)
             MyBase.SetDefaultBrickStyle(graph, style)
         End Sub
 
-        Protected Overrides Sub PrintBandHeader(ByVal graph As IBrickGraphics)
+        Protected Overrides Sub PrintBandHeader(ByVal graph As BrickGraphics)
             If Not View.OptionsPrint.PrintBandHeader Then
                 Return
             End If
@@ -80,7 +80,7 @@ Namespace dxExample
 
             Next band
         End Sub
-        Public Overrides Sub PrintHeader(ByVal graph As IBrickGraphics)
+        Public Overrides Sub PrintHeader(ByVal graph As BrickGraphics)
             vert = New BrickStyle(Bricks("HeaderPanel"))
             vert.StringFormat = vert.StringFormat.ChangeFormatFlags(StringFormatFlags.DirectionVertical Or StringFormatFlags.DirectionRightToLeft)
             MyBase.PrintHeader(graph)
