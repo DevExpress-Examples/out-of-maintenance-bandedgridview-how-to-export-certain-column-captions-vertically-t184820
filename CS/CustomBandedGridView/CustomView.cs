@@ -36,7 +36,7 @@ namespace dxExample {
     public class CustomPrintInfo : GridViewPrintInfo {
         public CustomPrintInfo(PrintInfoArgs args) : base(args) { }
 
-        public override void PrintHeader(IBrickGraphics graph) {
+        public override void PrintHeader(BrickGraphics graph) {
             base.PrintHeader(graph);
             if(!View.OptionsPrint.PrintHeader) return;
             Point indent = new Point(Indent, HeaderY);
