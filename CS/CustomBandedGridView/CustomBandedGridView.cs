@@ -45,11 +45,11 @@ namespace dxExample {
             : base(args) {
 
         }
-        protected override void SetDefaultBrickStyle(IBrickGraphics graph, BrickStyle style) {
+        protected override void SetDefaultBrickStyle(BrickGraphics graph, BrickStyle style) {
             base.SetDefaultBrickStyle(graph, style);
         }
 
-        protected override void PrintBandHeader(IBrickGraphics graph) {
+        protected override void PrintBandHeader(BrickGraphics graph) {
             if(!View.OptionsPrint.PrintBandHeader) return;
             Rectangle r = Rectangle.Empty;
             Point indent = new Point(Indent, 0);
@@ -70,7 +70,7 @@ namespace dxExample {
 
             }
         }
-        public override void PrintHeader(IBrickGraphics graph) {
+        public override void PrintHeader(BrickGraphics graph) {
             vert = new BrickStyle(Bricks["HeaderPanel"]);
             vert.StringFormat = vert.StringFormat.ChangeFormatFlags(StringFormatFlags.DirectionVertical | StringFormatFlags.DirectionRightToLeft);
             base.PrintHeader(graph);
