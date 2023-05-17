@@ -49,7 +49,7 @@ Namespace dxExample
             MyBase.New(args)
         End Sub
 
-        Public Overrides Sub PrintHeader(ByVal graph As IBrickGraphics)
+        Public Overrides Sub PrintHeader(ByVal graph As BrickGraphics)
             MyBase.PrintHeader(graph)
             If Not View.OptionsPrint.PrintHeader Then
                 Return
